@@ -12528,7 +12528,7 @@ Tests Passed
             <span class="k">for</span> <span class="n">batch_images</span> <span class="ow">in</span> <span class="n">get_batches</span><span class="p">(</span><span class="n">batch_size</span><span class="p">):</span>
                 <span class="c1"># TODO: Train Model</span>
                 <span class="n">steps</span> <span class="o">+=</span> <span class="mi">1</span>
-                <span class="c1"># normalize input image</span>
+                <span class="c1"># normalizes input image</span>
                 <span class="n">batch_images</span> <span class="o">=</span> <span class="n">batch_images</span> <span class="o">*</span> <span class="mi">2</span>
                 <span class="n">batch_z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">z_dim</span><span class="p">))</span>
                 
@@ -14385,6 +14385,20 @@ Epoch 1/1... Discriminator Loss: 0.0715... Generator Loss: 7.1516
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="References">References<a class="anchor-link" href="#References">&#182;</a></h1><ul>
+<li>Udacity Deep Learning DCGAN example: 
+  <a href="https://github.com/udacity/deep-learning/tree/master/dcgan-svhn">https://github.com/udacity/deep-learning/tree/master/dcgan-svhn</a></li>
+<li>How to Train a GAN?
+  <a href="https://github.com/soumith/ganhacks">https://github.com/soumith/ganhacks</a></li>
+</ul>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
